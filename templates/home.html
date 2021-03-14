@@ -29,11 +29,11 @@
         <form action="{{url_for('home')}}" method="post">
           <div class="item">
             <label for="dep">Departure Date</label>
-            <input type="date" name="dep" id="dep" required />
+            <input type="datetime-local" name="dep" id="dep" required />
           </div>
           <div class="item">
             <label for="ariv">Arrival Date</label>
-            <input type="date" name="ariv" id="ariv" required />
+            <input type="datetime-local" name="ariv" id="ariv" required />
           </div>
           <div class="item">
             <label for="source">Source </label>
@@ -58,7 +58,7 @@
           <div class="item">
             <label for="stopage">Stopage</label>
             <select id="stopage" name="stopage" required>
-              <option value="Non-Stop">Non-Stop</option>
+              <option value="0">Non-Stop</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
