@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 app = Flask(__name__)
 
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("flight_rf.pkl", "rb"))
 
 @app.route('/', methods=["GET", "POST"])
 def home():
